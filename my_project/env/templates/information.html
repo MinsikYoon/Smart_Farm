@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+			  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    </head>
+
+
+    <body>
+        <center>
+            <!--div style="width : 100%; height: 100px;">
+                <div style = "width: 50%; float : left; box-sizing: border-box; ">
+                    <button disabled  style="width:100%; height : 100%; background-color: beige;" >상태창</button>
+                </div>
+                <div style = "width: 50%; float : right; box-sizing: border-box; ">
+                    <button onclick = "location.href='/setting'" style="width:100%; height : 100%; background-color: aquamarine;" >설정</button>
+                </div>
+            </div>
+            
+
+            <div style="width : 100%; height: 300px;">
+                <div style="width : 30%; float:left;">
+                    TEMP :{{temp}}
+                    <form action=" " method="POST">
+                        <button> 카메라 </button>
+                    </form>
+
+                </div>
+
+
+            </div>
+        -->
+        <div style="width : 100%; height : 200px;">
+            <div style = "width : 100%; height : 50%; background-color:antiquewhite; line-height: 50px; ">
+                <div style="width: 50%; height : 100%; line-height: 100px; border: 1px solid; float: left;">
+                    <div style="float: left;;">현재온도 :</div>
+                </div>
+
+                <div style="width: 50%; height : 100%; line-height: 100px; border: 1px solid; float: right;">
+                    <div style="float: left;;">설정온도 :</div>
+                    <div id="ex-out"></div>
+                </div>
+            </div>
+
+            <div style = "width : 100%; height : 50%; background-color:antiquewhite; line-height: 50px; ">
+                <div style="width: 100%; height : 100%;  border: 1px solid; float: left;">
+                    
+                    <input type="range" min="0" max="30" id="ex-in">
+                    <script>
+                        document.querySelector('#ex-in').addEventListener('input',e=>{
+                        document.querySelector('#ex-out').innerHTML= e.target.value;});
+                    </script>
+                    
+                    
+                </div>
+
+                
+            </div>
+
+        </div>
+
+        </center>
+    </body>
+
+</html> 
